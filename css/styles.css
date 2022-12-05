@@ -170,6 +170,14 @@ ul {
 	padding: 12px 24px;
 }
 
+.filter-buttons .button:hover,
+.filter-buttons .button:focus {
+	box-shadow:
+		0px 3px 1px rgba(0, 0, 0, 0.1),
+		0px 2px 1px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 /* ЗАГОЛОВКИ */
 /* H1 title*/
 .hero .heading {
@@ -342,14 +350,13 @@ ul {
 	margin-bottom: 12px;
 }
 
-/* Подвал */
 .page-footer {
 	margin: 0 auto;
 	background-color: var(--heading-color);
 }
 
 .page-footer.section {
-	padding: 100px 156px;
+	padding: 100px 0;
 }
 
 .logo.footer {
@@ -365,6 +372,12 @@ ul {
 	color: #E7E9FC;
 	line-height: 1.5;
 	width: 264px;
+}
+
+.page-footer .title {
+	color: #E7E9FC;
+	line-height: 1.5;
+	margin-bottom: 16px;
 }
 
 .feature-icon {
@@ -400,7 +413,9 @@ ul {
 }
 
 .social-icons .item:hover,
-.social-icons .item:focus {
+.social-icons .item:focus,
+.social-icons.footer .item:hover,
+.social-icons.footer .item:focus {
 	background: #31D0AA;
 }
 
@@ -436,4 +451,17 @@ ul {
 .customers .link:focus {
 	border: 1px solid var(--brand-color);
 	fill: var(--brand-color);
+}
+
+.social-icons.footer .item+.item {
+	margin-left: 16px;
+}
+
+.social-icons.footer {
+	margin-left: 120px;
+	width: 208px;
+}
+
+.social-icons.footer .item {
+	background: rgba(255, 255, 255, 0.1);
 }
