@@ -75,11 +75,8 @@ ul {
 }
 
 .logo:hover,
-.logo.footer:hover {
-	color: var(--body-color);
-}
-
 .logo:focus,
+.logo.footer:hover,
 .logo.footer:focus {
 	color: var(--body-color);
 }
@@ -99,7 +96,7 @@ ul {
 
 .nav-items .link:hover,
 .nav-items .link:focus {
-	color: var(--body-color);
+	color: var(--brand-color);
 }
 
 .nav-items .link:active {
@@ -228,7 +225,7 @@ ul {
 	padding: 32px 0;
 }
 
-.team-list .item {
+.team-list>.item {
 	box-shadow:
 		0px 1px 6px rgba(46, 47, 66, 0.08),
 		0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -397,7 +394,7 @@ ul {
 	align-items: center;
 }
 
-.social-icons .item {
+.social-icons .link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -412,10 +409,10 @@ ul {
 	height: 16px;
 }
 
-.social-icons .item:hover,
-.social-icons .item:focus,
-.social-icons.footer .item:hover,
-.social-icons.footer .item:focus {
+.social-icons .link:hover,
+.social-icons .link:focus,
+.social-icons.footer .link:hover,
+.social-icons.footer .link:focus {
 	background: #31D0AA;
 }
 
@@ -462,6 +459,6 @@ ul {
 	width: 208px;
 }
 
-.social-icons.footer .item {
+.social-icons.footer .link {
 	background: rgba(255, 255, 255, 0.1);
 }
